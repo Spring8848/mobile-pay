@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     @GetMapping("/user")
     public String showUser() {
-        return "hello sir !";
+        return "hello world !";
+    }
+
+    @GetMapping("/alluser")
+    public String showUserList() {
+        return "all users list";
     }
 }
